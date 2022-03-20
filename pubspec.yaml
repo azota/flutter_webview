@@ -4,6 +4,8 @@ repository: https://github.com/flutter/plugins/tree/main/packages/webview_flutte
 issue_tracker: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+webview%22
 version: 3.0.1
 
+publish_to: "none"
+
 environment:
   sdk: ">=2.14.0 <3.0.0"
   flutter: ">=2.5.0"
@@ -19,7 +21,11 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter_android: ^2.8.0
+  #webview_flutter_android: ^2.8.0
+  webview_flutter_android:
+    git: 
+      url: https://github.com/azota/webview_flutter_android
+      ref: 369a063de2928773cf6b39008cda76ca1976e469
   webview_flutter_platform_interface: ^1.8.0
   webview_flutter_wkwebview: ^2.7.0
 
